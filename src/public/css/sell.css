@@ -1,0 +1,191 @@
+
+.container {
+  max-width: 480px;
+  margin: 0 auto;
+  background: #fff;
+  min-height: 100vh;
+  padding-bottom: 40px;
+}
+
+/* Header */
+.page-header {
+  text-align: center;
+  padding: 20px 16px 16px;
+  border-bottom: 1px solid #eee;
+}
+
+.page-header h1 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Image Upload */
+.image-upload-area {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 32px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fafafa;
+}
+
+.upload-btn {
+  border: 1.5px solid #e0474c;
+  background: transparent;
+  color: #e0474c;
+  padding: 8px 20px;
+  border-radius: 20px;
+  font-size: 13px;
+  cursor: pointer;
+  font-family: inherit;
+  transition: background 0.15s, color 0.15s;
+}
+
+.upload-btn:hover {
+  background: #e0474c;
+  color: #fff;
+}
+
+/* Category */
+.field-label {
+  font-size: 13px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.category-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tag {
+  border: 1px solid;
+  background: transparent;
+  border-color: #e0474c;
+  color: #e0474c;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  cursor: pointer;
+  font-family: inherit;
+  transition: all 0.15s;
+}
+
+.tag:hover {
+  border-color: #e0474c;
+  color: #e0474c;
+}
+
+.tag.active {
+  background: #e0474c;
+  border-color: #e0474c;
+  color: #fff;
+}
+
+/* Select */
+.select-wrapper {
+  position: relative;
+}
+
+.select-field {
+  width: 100%;
+  padding: 10px 36px 10px 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+  font-family: inherit;
+  color: #999;
+  background: #fff;
+  appearance: none;
+  -webkit-appearance: none;
+  cursor: pointer;
+}
+
+.select-field:focus {
+  outline: none;
+}
+
+.select-arrow {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: #999;
+  font-size: 12px;
+}
+
+/* Fields */
+.field-group {
+  margin-bottom: 16px;
+}
+
+.field-group:last-of-type {
+  margin-bottom: 0;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+  font-family: inherit;
+  color: #333;
+  transition: border-color 0.15s;
+}
+
+.input-field:focus {
+  outline: none;
+  border-color: #e0474c;
+}
+
+.input-field::placeholder {
+  color: #ccc;
+}
+
+textarea.input-field {
+  resize: vertical;
+  min-height: 80px;
+}
+
+/* Price */
+.price-wrapper {
+  position: relative;
+}
+
+.price-prefix {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 14px;
+  color: #333;
+}
+
+.price-input {
+  padding-left: 24px;
+}
+
+/* Submit */
+.submit-section {
+  padding: 55px 0;
+}
+
+.submit-btn {
+  width: 100%;
+  background: #e0474c;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 14px;
+  font-size: 15px;
+  font-weight: 700;
+  font-family: inherit;
+  cursor: pointer;
+  transition: background 0.15s;
+}

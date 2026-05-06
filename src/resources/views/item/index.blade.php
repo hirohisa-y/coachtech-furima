@@ -5,7 +5,7 @@
 @endsection
 
 @section('content')
-<div class="">
+<div class="container">
   <div class="tabs">
   <div class="tab">おすすめ</div>
   <div class="tab active" >マイリスト</div>

@@ -20,4 +20,14 @@ class ItemController extends Controller
     {
         return view('item.sell');
     }
+
+    public function purchase($id)
+    {
+        return view('item.purchase');
+    }
+
+    public function address($id)
+    {
+        return view('item.address');
+    }
 }

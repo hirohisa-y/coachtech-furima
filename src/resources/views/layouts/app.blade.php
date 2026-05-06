@@ -16,7 +16,7 @@
     <div class="header__inner">
       <div class="header-utilities">
       <a href="/">
-        <img src="{{ asset('img/logo.png') }}" alt="COACHTECH">
+        <img style="height: 30px" src="{{ asset('img/logo.png') }}" alt="COACHTECH">
       </a>
       @if (Auth::check())
       <input style="height: 35px; width: 450px;" type="text" placeholder="なにをお探しですか？">
@@ -34,6 +34,8 @@
             <button class="header-nav__button--gray">出品</button>
           </ul>
         </nav>
+        @else
+        
         @endif
       </div>
     </div>

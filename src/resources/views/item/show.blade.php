@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('css')
-<link rel="stylesheet" href="{{ asset('css/register.css') }}">
+<link rel="stylesheet" href="{{ asset('css/show.css') }}">
 @endsection
 
 @section('content')
@@ -20,15 +20,11 @@
 
       <div class="actions">
         <button class="action-icon" aria-label="いいね">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
-            <path d="M12 21C12 21 3 14.5 3 9a5 5 0 0 1 9-3 5 5 0 0 1 9 3c0 5.5-9 12-9 12z"/>
-          </svg>
+          <img src="/img/heart.png" height="18"/>
           3
         </button>
         <button class="action-icon" aria-label="コメント">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
-            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
-          </svg>
+          <img src="/img/comment.png" height="18" />
           1
         </button>
       </div>

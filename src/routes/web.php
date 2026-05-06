@@ -21,14 +21,19 @@ use App\Http\Controllers\ItemController;
 */
 
 // Route::get('/', function () {
-//     return view('welcome');
+//     return view('welcome');()
 // });
-Route::middleware('auth')->prefix('mypage')->name('mypage.')->group(function () {
-  Route::get('/profile', [MypageController::class, 'edit'])->name('profile.edit');
-  Route::post('/profile/update', [MypageController::class, 'update'])->name('profile.update');
+Route::middleware('auth')->name('mypage.')->group(function () {
+  Route::get('/mypage', [MypageController::class, 'index'])->name('profile');
+  Route::get('/mypage/profile', [MypageController::class, 'edit'])->name('profile.edit');
+  Route::post('/mypage/profile/update', [MypageController::class, 'update'])->name('profile.update');
 });
 
 Route::middleware('auth')->group(function () {
-  Route::get('/', [ItemController::class, 'index'])->name('item.index');
   Route::get('/item/{id}', [ItemController::class, 'show'])->name('item.show');
+  Route::get('/sell', [ItemController::class, 'sell'])->name('item.sell');
+  Route::get('/purchase/{id}', [ItemController::class, 'purchase'])->name('item.purchase');
+  Route::get('/purchase/address/{id}', [ItemController::class, 'address'])->name('item.purchase.address');
 });
+
+Route::get('/', [ItemController::class, 'index']);

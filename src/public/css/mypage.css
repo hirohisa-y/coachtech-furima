@@ -1,0 +1,81 @@
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+/* プロフィールセクション */
+.profile-section {
+  display: flex;
+  align-items: center;
+  padding: 32px 0 24px;
+  gap: 24px;
+}
+
+.avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #d9d9d9;
+  flex-shrink: 0;
+}
+
+.username {
+  font-size: 20px;
+  font-weight: 700;
+  flex: 1;
+}
+
+.edit-btn {
+  display: inline-block;
+  padding: 8px 16px;
+  border: 1.5px solid #e0001b;
+  border-radius: 4px;
+  color: #e0001b;
+  background: #fff;
+  font-size: 13px;
+  cursor: pointer;
+  white-space: nowrap;
+  text-decoration: none;
+  transition: background 0.15s, color 0.15s;
+}
+
+.edit-btn:hover {
+  background: #e0001b;
+  color: #fff;
+}
+
+/* 商品グリッド */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 180px);
+  gap: 45px;
+  padding-bottom: 40px;
+}
+
+.product-card {
+  cursor: pointer;
+}
+
+.product-image {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  background-color: #d9d9d9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  color: #555;
+  border-radius: 4px;
+  margin-bottom: 8px;
+  transition: opacity 0.15s;
+}
+
+.product-card:hover .product-image {
+  opacity: 0.85;
+}
+
+.product-name {
+  font-size: 13px;
+  color: #333;
+}
