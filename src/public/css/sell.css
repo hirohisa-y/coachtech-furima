@@ -75,10 +75,7 @@
   transition: all 0.15s;
 }
 
-.tag:hover {
-  border-color: #e0474c;
-  color: #e0474c;
-}
+
 
 .tag.active {
   background: #e0474c;
