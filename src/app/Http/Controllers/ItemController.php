@@ -42,8 +42,9 @@ class ItemController extends Controller
         // ファイルを保存してパスを取得
             $imagePath = $request->file('image')->store('items', 'public');
         }
-        var_dump($request->all());
-        exit;
+        // var_dump($request->all());
+        // exit;
+        
         // 商品の保存
         $item = Item::create([
             'name'        => $request->name,
@@ -54,6 +55,8 @@ class ItemController extends Controller
             'image'  => $imagePath,
             'user_id' => auth()->id(),
         ]);
+
+        $item->categories()->attach($request->tags);
         return response()->json([
             'message' => '商品を登録しました',
         ], 201);

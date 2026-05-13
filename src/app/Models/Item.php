@@ -17,4 +17,9 @@ class Item extends Model
         'image',
         'user_id',
     ];
+
+    public function categories()
+    {
+        return $this->belongsToMany(Category::class);
+    }
 }

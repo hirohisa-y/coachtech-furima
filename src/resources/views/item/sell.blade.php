@@ -25,20 +25,20 @@
     <div class="field-group">
         <div class="field-label">カテゴリー</div>
         <div class="category-tags">
-          <label class="tag" >ファッション</label>
-          <label class="tag" >家電</label>
-          <label class="tag" >インテリア</label>
-          <label class="tag" >レディース</label>
-          <label class="tag" >メンズ</label>
-          <label class="tag" >コスメ</label>
-          <label class="tag" >本</label>
-          <label class="tag" >ゲーム</label>
-          <label class="tag" >スポーツ</label>
-          <label class="tag" >キッチン</label>
-          <label class="tag" >ハンドメイド</label>
-          <label class="tag" >アクセサリー</label>
-          <label class="tag" >おもちゃ</label>
-          <label class="tag" >ベビー・キッズ</label>
+          <label class="tag" data-value="1">ファッション</label>
+          <label class="tag" data-value="2">家電</label>
+          <label class="tag" data-value="3">インテリア</label>
+          <label class="tag" data-value="4">レディース</label>
+          <label class="tag" data-value="5">メンズ</label>
+          <label class="tag" data-value="6">コスメ</label>
+          <label class="tag" data-value="7">本</label>
+          <label class="tag" data-value="8">ゲーム</label>
+          <label class="tag" data-value="9">スポーツ</label>
+          <label class="tag" data-value="10">キッチン</label>
+          <label class="tag" data-value="11">ハンドメイド</label>
+          <label class="tag" data-value="12">アクセサリー</label>
+          <label class="tag" data-value="13">おもちゃ</label>
+          <label class="tag" data-value="14">ベビー・キッズ</label>
         </div>
       </div>
 
