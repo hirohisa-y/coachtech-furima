@@ -29,7 +29,7 @@ DB_PASSWORD=laravel_pass
 
 ## user のログイン用初期データ
 
-- メールアドレス: hoge@example.com
+- メールアドレス: test@example.com
 - パスワード: hoge1234
 
 ## 使用技術
