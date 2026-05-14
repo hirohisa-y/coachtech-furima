@@ -17,7 +17,7 @@ class UserSeeder extends Seeder
        // 直接挿入
         DB::table('users')->insert([
             'name' => 'テストユーザー',
-            'email' => 'hoge@example.com',
+            'email' => 'test@example.com',
             'password' => bcrypt('hoge1234'),
         ]); //
     }
